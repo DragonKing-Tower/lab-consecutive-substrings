@@ -1,49 +1,23 @@
-# Consecutive Substrings
+# Explanation
 
-## Learning Goals
+## Pseudocode
 
-- Practice algorithmic problem solving
+get string
+check to make sure its a string
+split the string into its characters
+for every character put that character into return array
+  then: for every character after that charater
+    add it to a growing string
+    put that string into return array
+return the return array to the user
+//obviously some extra declarations were added, but I figure that those are JS details
 
-## Instructions
+## Explanation
 
-Given a string, return all consecutive substrings within that string consisting
-of at least one character. Substrings should be returned in the order in which
-they appear.
+###For Loop
+I used for loops for this function because they were the simplest way to easily access both the individual characters
+and the split string array. I though about using while loops and forEach; but while loops would have made the code a little to
+convoluted for what I needed givin that I would know the length of the array ahead of time. forEach sounded like a good idea, 
+until I realized that I would still have to use a nested for loop inside that forEach, which would make the code harder to
+understand to write. Therefore I settled on for loops as the most effective solution.
 
-Note than in the string `'abc'`, `'ac'` is not a consecutive substring.
-
-The input string will have a length of 0 or more.
-
-```txt
-Input: 'abc'
-Output: ['a', 'ab', 'abc', 'b', 'bc', 'c']
-
-Input: 'a'
-Output: ['a']
-```
-
-## Before you start coding
-
-1. Rewrite the problem in your own words
-2. Validate that you understand the problem
-3. Write your own test cases
-4. Pseudocode
-5. Code!
-6. Determine Big(O)
-
-**_And remember, don't run our tests until you've passed your own!_**
-
-## How to run your own tests
-
-### JavaScript
-
-1. `cd` into the javascript folder
-2. `node <filename>.js`
-
-## How to run our tests
-
-### JavaScript
-
-1. `cd` into the javascript folder
-2. `npm i`
-3. `npm test`
