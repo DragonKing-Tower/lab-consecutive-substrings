@@ -20,7 +20,7 @@ return the return array to the user
 
 //obviously some extra declarations were added, but I figure that those are JS details
 
-###For Loop
+##For Loop
 
 I used for loops for this function because they were the simplest way to easily access both the individual characters
 
